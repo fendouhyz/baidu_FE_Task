@@ -6,7 +6,7 @@
     clear: both;
 }
 body{
-    background: gray;
+    background: #C0C0C0;
     font-family: "Microsoft YaHei";
 }
 nav{
@@ -49,6 +49,7 @@ article{
     border: solid 1px gray;
     margin: 25px auto;
     padding: 30px 15px 30px 15px ;
+    box-shadow: 4px 4px 4px gray;
 }
 article h2{
     font-weight: 700;
@@ -112,6 +113,7 @@ article input[type="submit"],[type="reset"]{
 article br{
     clear: left;
 }
+<<<<<<< HEAD
 /*处理网页宽度太小，导航栏收缩*/
 @media screen and (max-width:990px) {
     #navIcon{
@@ -147,3 +149,11 @@ article br{
         display: block;
     }
 }
+=======
+footer{
+    background: #000; 
+    color: #fff; 
+    text-align: center; 
+    line-height: 4em
+}
+>>>>>>> origin/gh-pages
