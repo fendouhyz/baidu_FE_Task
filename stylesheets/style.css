@@ -6,7 +6,7 @@
     clear: both;
 }
 body{
-    background: gray;
+    background: #C0C0C0;
     font-family: "Microsoft YaHei";
 }
 nav{
@@ -42,6 +42,7 @@ article{
     border: solid 1px gray;
     margin: 25px auto;
     padding: 30px 15px 30px 15px ;
+    box-shadow: 4px 4px 4px gray;
 }
 article h2{
     font-weight: 700;
@@ -104,4 +105,10 @@ article input[type="submit"],[type="reset"]{
 }
 article br{
     clear: left;
+}
+footer{
+    background: #000; 
+    color: #fff; 
+    text-align: center; 
+    line-height: 4em
 }
