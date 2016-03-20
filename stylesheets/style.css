@@ -113,7 +113,12 @@ article input[type="submit"],[type="reset"]{
 article br{
     clear: left;
 }
-<<<<<<< HEAD
+footer{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 4em
+}
 /*处理网页宽度太小，导航栏收缩*/
 @media screen and (max-width:990px) {
     #navIcon{
@@ -149,11 +154,3 @@ article br{
         display: block;
     }
 }
-=======
-footer{
-    background: #000; 
-    color: #fff; 
-    text-align: center; 
-    line-height: 4em
-}
->>>>>>> origin/gh-pages
