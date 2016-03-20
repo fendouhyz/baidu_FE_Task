@@ -10,13 +10,14 @@ body{
     font-family: "Microsoft YaHei";
 }
 nav{
-    /*position:fixed;*/
-    /*top:0px;*/
     background: #3c3c3c;
     width: 100%;
+    height: 75px;
+    position: relative;
 }
-nav img{
-    float:left;
+#baiduLogo{
+    position: absolute;
+    left: 0px;
     width: 200px;
     height: 75px;
 }
@@ -30,6 +31,12 @@ nav ul li{
     height: 75px;
     margin-right:25px;
     color: black;
+}
+#navIcon{
+    width: 75px;
+    height: 75px;
+    display: none;
+    margin-right:0px;
 }
 nav ul li a {
     color: white;
@@ -104,4 +111,39 @@ article input[type="submit"],[type="reset"]{
 }
 article br{
     clear: left;
+}
+/*处理网页宽度太小，导航栏收缩*/
+@media screen and (max-width:990px) {
+    #navIcon{
+        display: inline-block;
+        height: 75px;
+        z-index: 1;
+    }
+    #forResize{
+        z-index: 2;
+    }
+    nav ul{
+        width: 75px;
+        height: 75px;
+        float: right;
+        margin-right: 25px;
+        display: inline-block;
+    }
+    nav ul li:nth-child(n+2){
+        clear: right;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        list-style: none;
+        background: #3c3c3c;
+        border: solid 1px gray;
+        font-size: 10px;
+        margin-right: 0px;
+    }
+    nav ul li:nth-child(n+2) {
+        display: none;
+    }
+    #forResize:hover ul li:nth-child(n+2) {
+        display: block;
+    }
 }

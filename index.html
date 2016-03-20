@@ -2,19 +2,22 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>任务一</title>
-    <link rel="stylesheet" href="./stylesheets/style.css">
+    <title>任务二</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav>
-    <img src="./pic/bd_logo1.png">
-    <ul>
-        <li><a href="#article1">这是一篇普通的文章</a></li>
-        <li><a href="#article2">这是一首诗,和一首词</a></li>
-        <li><a href="#article3">这是一篇有关钱的文章</a></li>
-        <li><a href="#article4">这是一篇代码</a></li>
-        <li><a href="#pic">图片</a></li>
-    </ul>
+    <img id = "baiduLogo" src="bd_logo1.png">
+    <div id="forResize">
+        <ul>
+            <li id="navIcon"><img src="./pic/navIcon.png"></li>
+            <li class="navli"><a href="#article1">这是一篇普通的文章</a></li>
+            <li class="navli"><a href="#article2">这是一首诗,和一首词</a></li>
+            <li class="navli"><a href="#article3">这是一篇有关钱的文章</a></li>
+            <li class="navli"><a href="#article4">这是一篇代码</a></li>
+            <li class="navli"><a href="#pic">图片</a></li>
+        </ul>
+    </div>
 </nav>
 <article>
     <h2><a name="article1">文章一</a></h2>
@@ -120,7 +123,7 @@
         <br/>
         <input type="reset" value="重置" name="reset">
         <br/>
-            <div class="clear"></div>
+        <div class="clear"></div>
     </form>
     <br/>
 </article>
