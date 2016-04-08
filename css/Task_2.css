@@ -1,119 +1,149 @@
-body {
-    padding: 0;
-    margin: 0;
-    font-family: "Microsoft YaHei UI", sans-serif;
+*{
+    padding:0px;
+    margin: 0px;
 }
-body {
-    background-color: rgb(222, 222, 222);
+.clear{
+    clear: both;
 }
-header {
-    background-color: rgb(51, 51, 51);
-    height: 100px;
-    min-width: 1000px;
+body{
+    background: gray;
+    font-family: "Microsoft YaHei";
 }
-#top {
+nav{
+    background: #3c3c3c;
     width: 100%;
-    height: 100px;
-}
-#top a {
-    text-decoration: none;
-    color: white;
-}
-#top a:hover {
-    text-decoration: underline;
-}
-#top img {
-    height: 80px;
-    margin: 10px 0 0 100px;
-}
-#nav {
-    margin: 0 100px 0 0;
-    padding: 0;
-    float: right;
-    height: 100px;
-    line-height: 100px;
-}
-#nav li {
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-article {
-    width: 85%;
-    border: thin solid rgb(203, 203, 203);
-    padding: 30px;
-    margin: 30px auto;
-    background-color: white;
-    line-height: 30px;
-    word-break: normal;
-    border-right-style: ridge;
-    border-bottom-style: ridge;
-}
-article p {
-    text-indent: 2em;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 0 auto;
-}
-th {
-    background-color: rgb(51, 51, 51);
-    color: white;
-    border: 1px solid rgb(203, 203, 203);
-    text-align: left;
-}
-td {
-    border: 1px solid rgb(203, 203, 203);
-}
-.line {
-    width: 40%;
-}
-.last {
-    width: 20%;
-}
-.last-row {
-    background-color: rgb(203, 203, 203);
-}
-
-#register h2 {
-    border-left: 3px solid rgb(205, 205, 205);
-    height: 40px;
-    line-height: 40px;
-}
-#submit {
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 20px;
-    line-height: 40px;
-    width: 100%;
-    height: 40px;
-    background-color: rgb(51, 85, 208);
-}
-.text {
-    padding-left: 128px;
-    color: rgb(166, 167, 195);
-}
-.detail {
-    padding-left: 80px;
-}
-#message {
+    height: 75px;
     position: relative;
 }
-#describe {
+#baiduLogo{
     position: absolute;
-    left: 48px;
-    top: 0;
+    left: 0px;
+    width: 200px;
+    height: 75px;
 }
-#detail {
-    margin-left: 130px;
+nav ul {
+    height: 75px;
 }
-footer {
-    height: 100px;
-    background-color: black;
-    color: white;
-    line-height: 100px;
+nav ul li{
+    float: right;
     text-align: center;
+    line-height: 75px;
+    height: 75px;
+    margin-right:25px;
+    color: black;
+}
+#navIcon{
+    width: 75px;
+    height: 75px;
+    display: none;
+    margin-right:0px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+article{
+    width: 90%;
+    background: white;
+    border: solid 1px gray;
+    margin: 25px auto;
+    padding: 30px 15px 30px 15px ;
+}
+article h2{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+article h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.writer,.time{
+    font-size: 15px;
+    margin-right: 10px;
+}
+article p.content{
+    text-indent: 2em;
+}
+article ul li{
+    list-style: none;
+    margin: 15px 15px 15px 15px ;
+}
+article h3 .line{
+    width: 0px;
+    height: 100%;
+    border: solid 1px gray;
+    margin-right: 10px;
+}
+article form label{
+    float: left;
+    width: 200px;
+    text-align: right;
+    margin-bottom: 15px;
+}
+article input,select{
+    width: 180px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    text-align: left;
+}
+article input[type="radio"]{
+    width:30px;
+}
+article form textarea {
+    width: 50%;
+    height: 180px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    text-align: left;
+}
+article input[type="submit"],[type="reset"]{
+    display: block;
+    width:90%;
+    margin: 0 auto;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background: #F0E68C;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+}
+article br{
+    clear: left;
+}
+/*处理网页宽度太小，导航栏收缩*/
+@media screen and (max-width:990px) {
+    #navIcon{
+        display: inline-block;
+        height: 75px;
+        z-index: 1;
+    }
+    #forResize{
+        z-index: 2;
+    }
+    nav ul{
+        width: 75px;
+        height: 75px;
+        float: right;
+        margin-right: 25px;
+        display: inline-block;
+    }
+    nav ul li:nth-child(n+2){
+        clear: right;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        list-style: none;
+        background: #3c3c3c;
+        border: solid 1px gray;
+        font-size: 10px;
+        margin-right: 0px;
+    }
+    nav ul li:nth-child(n+2) {
+        display: none;
+    }
+    #forResize:hover ul li:nth-child(n+2) {
+        display: block;
+    }
 }

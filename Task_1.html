@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>任务一</title>
+    </head>
+    <body>
+    <h1>这是博客</h1>
+    <nav>
+        <ul>
+            <li><a href="#article1">这是一篇普通的文章</a></li>
+            <li><a href="#article2">这是一首诗,和一首词</a></li>
+            <li><a href="#article3">这是一篇有关钱的文章</a></li>
+            <li><a href="#article4">这是一篇代码</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h2><a name="article1">文章一</a></h2>
+        <h3>HTML简史</h3>
+        <p>来源:&nbsp;&nbsp;<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Introduction">MDN HTML入门</a></p>
+        <p>蒂姆·伯纳斯-李，一名CERN（欧洲核子研究组织）的物理学家，在80年代后期设计了一种能在网路上分享文档的方式。在这之前，网路上沟通的方式仅限于纯文本传递，比如：电子邮件、FTP(文件传输协议)和Usenet讨论版。HTML是利用内容档案储存至中央服务器的方式，然后再将内容透过浏览器传递至本机工作站。 它简化了内容存取的方式，也让更多丰富内容能够显示（诸如较复杂的文本格式与图片的显示）。HTML 源自于SGML——它是一种复杂的文档结构定义和内容描述（文本或图像）语法；从HTML5起，HTML不再坚守SGML的语法。
+        </p>
+    </article>
+    <hr/>
+    <article>
+        <h2><a name="article2">文章二</a></h2>
+        <h3>一首诗<strong>静夜诗</strong></h3>
+        <p>作者：李白</p>
+        <p>床前明月光，<br />疑是地上霜，<br />举头望明月，<br />低头是故乡。</p>
+        <h3>一首词<strong>如梦令</strong></h3>
+        <p>《如梦令·常记溪亭日暮》，作者是李清照，这是一首忆昔词。</p>
+        <blockquote>常记溪亭日暮，沉醉不知归路。兴尽晚回舟，误入藕花深处.争渡，争渡，惊起一滩鸥鹭。</blockquote>
+        <p>这首小令用词简练，只选取了几个片断，把移动着的风景和作者怡然的心情融合一起，写出了作者青春年少时的好心情，让人不由想随她一道荷丛荡舟，沉醉不归。正所谓“少年情怀自是得”，这首诗不事雕琢，富有一种自然之美。</p>
+        <h4>李清照相册</h4>
+        <ul>
+            <li><img src="http://f.hiphotos.baidu.com/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=1c42048c662762d09433acedc185639f/bf096b63f6246b60b99d09dbeef81a4c500fa28a.jpg"></li>
+            <li><img src="http://f.hiphotos.baidu.com/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=1c42048c662762d09433acedc185639f/bf096b63f6246b60b99d09dbeef81a4c500fa28a.jpg"></li>
+            <li><img src="http://f.hiphotos.baidu.com/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=1c42048c662762d09433acedc185639f/bf096b63f6246b60b99d09dbeef81a4c500fa28a.jpg"></li>
+        </ul>
+    </article>
+    <hr/>
+    <article>
+        <h2><a name="article3">文章三</a></h2>
+        <h3>开支</h3>
+        <table border="1px" summary="本表格记录本月">
+            <caption>“月开支”</caption>
+            <tbody>
+            <tr>
+                <th>项目</th>
+                <th>收支</th>
+            </tr>
+            <tr>
+                <td>住房</td>
+                <td>-1000</td>
+            </tr>
+            <td>吃</td>
+            <td>-1500</td>
+            </tr>
+            <tr>
+                <td>收入</td>
+                <td>1</td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+    <hr/>
+    <article>
+        <h2><a name="article4">文章四</a></h2>
+        <h3>这是一篇代码</h3>
+    	<pre>
+    		if(1&lt;2) cout&lt;&lt;"hello world!";
+    	</pre>
+        </h3>
+        <h2>写在最后</h2>
+        <p>对于以上的文章有任何建议可以通过侧栏进行反馈，谢谢您的阅读</p>
+    </article>
+    <hr/>
+    <form  method="post" action="save.php">
+        发件人:
+        <input type="text" name="people" placeholder="请按邮箱格式填写">
+        <br />
+        密码:&nbsp;
+        <input type="password" name="pass" placeholder="密码为6-12位英文数字">
+        请重复输入密码：&nbsp;
+        <input type="password" name="passSure" placeholder="密码为6-12位英文数字">
+        <br />
+        <fieldset>
+            <legend>反馈信息</legend>
+            <label>类型:</label>
+            <label>纠错</label>
+            <input type="checkbox" value="1"  name="feedBack" />
+            <label>建议</label>
+            <input type="checkbox" value="2"  name="feedBack" />
+            <br />
+            <label>提意见的文章</label>
+            <select name="articleSeleted">
+                <option value="1" selected = "selected">第一篇</option>
+                <option value="2">第二篇</option>
+                <option value="3">第三篇</option>
+                <option value="4">第四篇</option>
+            </select>
+            <br />
+            <div id="sexSelect">
+                <input type="radio" value="man" name="sex">男
+                <input type="radio" value="woman" name="sex">女
+            </div>
+
+            <textarea rows="10" cols="30">输入您的建议</textarea>
+            <br />
+            <input type="submit" value="发送" name="submit">
+            <input type="reset" value="重置" name="reset">
+        </fieldset>
+    </form>
+    <br/>
+    <footer>版权所有&copy;</footer>
+    </body>
+</html>
