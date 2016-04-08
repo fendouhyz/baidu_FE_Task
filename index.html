@@ -1,131 +1,153 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
-    <title>任务二</title>
-    <link rel="stylesheet" href="./stylesheets/style.css">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" />
+	<script defer type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
-<nav>
-    <img id = "baiduLogo" src="./pic/bd_logo1.png">
-    <div id="forResize">
-        <ul>
-            <li id="navIcon"><img src="./pic/navIcon.png"></li>
-            <li class="navli"><a href="#article1">这是一篇普通的文章</a></li>
-            <li class="navli"><a href="#article2">这是一首诗,和一首词</a></li>
-            <li class="navli"><a href="#article3">这是一篇有关钱的文章</a></li>
-            <li class="navli"><a href="#article4">这是一篇代码</a></li>
-            <li class="navli"><a href="#pic">图片</a></li>
-        </ul>
+<header id="top">
+    <h1>百度前端技术学院<span id = "teamName">zxh的知乎分队</span></h1>
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">
+                    <a href="http://ife.baidu.com/task/all">第一阶段任务</a>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"><a class="taskDiv" href="Task_1.html">任务一：零基础HTML编码</a></div>
+            <div class="col-md-3"><a href="Task_2.html">任务二：零基础HTML及CSS编码（一）</a></div>
+            <div class="col-md-3"><a href="Task_3.html">任务三：三栏式布局</a></div>
+            <div class="col-md-3"><a href="Task_4.html">任务四：定位和居中问题</a></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="Task_5.html">任务五：零基础HTML及CSS编码（二）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_6.html">任务六：通过HTML及CSS模拟报纸排版</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_7.html">任务七：实现常见的技术产品官网的页面架构及样式布局</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_8.html">任务八：响应式网格（栅格化）布局</a>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-3">
+                    <a href="Task_9.html">任务九：使用HTML/CSS实现一个复杂页面</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="Task_10.html">任务十：Flexbox 布局练习</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="Task_11.html">任务十一：移动Web页面布局实践</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="Task_12.html">任务十二：学习CSS 3的新特性</a>
+                </div>
+        </div>
     </div>
-</nav>
-<article>
-    <h2><a name="article1">文章一</a></h2>
-    <h3>HTML简史</h3>
-    <p><span class="writer" id="a">蒂姆·伯纳斯-李</span><span class="time" id="b">2015-03-13</span></p>
-    <p class="content">蒂姆·伯纳斯-李，一名CERN（欧洲核子研究组织）的物理学家，在80年代后期设计了一种能在网路上分享文档的方式。在这之前，网路上沟通的方式仅限于纯文本传递，比如：电子邮件、FTP(文件传输协议)和Usenet讨论版。HTML是利用内容档案储存至中央服务器的方式，然后再将内容透过浏览器传递至本机工作站。 它简化了内容存取的方式，也让更多丰富内容能够显示（诸如较复杂的文本格式与图片的显示）。HTML 源自于SGML——它是一种复杂的文档结构定义和内容描述（文本或图像）语法；从HTML5起，HTML不再坚守SGML的语法。
-        <a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Introduction">MDN HTML入门</a>
-    </p>
-</article>
-
-<article>
-    <h2><a name="article2">文章二</a></h2>
-    <h3>静夜诗</h3>
-    <p><span class="writer">李白</span><span class="time">2015-03-13</span></p>
-    <p>床前明月光，<br />疑是地上霜，<br />举头望明月，<br />低头是故乡。</p>
-    <h3>如梦令</h3>
-    <p class="content">《如梦令·常记溪亭日暮》，作者是李清照，这是一首忆昔词。</p>
-    <blockquote>常记溪亭日暮，沉醉不知归路。兴尽晚回舟，误入藕花深处.争渡，争渡，惊起一滩鸥鹭。</blockquote>
-    <p class="content">这首小令用词简练，只选取了几个片断，把移动着的风景和作者怡然的心情融合一起，写出了作者青春年少时的好心情，让人不由想随她一道荷丛荡舟，沉醉不归。正所谓“少年情怀自是得”，这首诗不事雕琢，富有一种自然之美。</p>
-</article>
-
-<article>
-    <h2><a name="article3">文章三</a></h2>
-    <h3>开支</h3>
-    <p><span class="writer">蒂姆·伯纳斯-李</span><span class="time">2015-03-13</span></p>
-    <table border="1px" summary="本表格记录本月">
-        <caption>“月开支”</caption>
-        <tbody>
-        <tr>
-            <th>项目</th>
-            <th>收支</th>
-        </tr>
-        <tr>
-            <td>住房</td>
-            <td>-1000</td>
-        </tr>
-        <td>吃</td>
-        <td>-1500</td>
-        </tr>
-        <tr>
-            <td>收入</td>
-            <td>1</td>
-        </tr>
-        </tbody>
-    </table>
-</article>
-
-<article>
-    <h2><a name="pic">图片</a></h2>
-    <ul>
-        <li><img src="http://f.hiphotos.baidu.com/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=1c42048c662762d09433acedc185639f/bf096b63f6246b60b99d09dbeef81a4c500fa28a.jpg"></li>
-        <li><img src="http://f.hiphotos.baidu.com/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=1c42048c662762d09433acedc185639f/bf096b63f6246b60b99d09dbeef81a4c500fa28a.jpg"></li>
-        <li><img src="http://f.hiphotos.baidu.com/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=1c42048c662762d09433acedc185639f/bf096b63f6246b60b99d09dbeef81a4c500fa28a.jpg"></li>
-    </ul>
-</article>
-
-<article>
-    <h2><a name="article4">文章四</a></h2>
-    <h3>这是一篇代码</h3>
-    <p><span class="writer">蒂姆·伯纳斯-李</span><span class="time">2015-03-13</span></p>
-	<pre>
-		if(1&lt;2) cout&lt;&lt;"hello world!";
-	</pre>
-    </h3>
-    <h2>写在最后</h2>
-    <p>对于以上的文章有任何建议可以通过侧栏进行反馈，谢谢您的阅读</p>
-</article>
-
-<article>
-    <h3><span class="line"></span>以后这是一个侧栏</h3>
-    <form  method="post" action="save.php">
-        <label>发件人</label>
-        <input type="text" name="people" placeholder="请按邮箱格式填写">
-        <br/>
-        <label>密码</label>
-        <input type="password" name="pass" placeholder="密码为6-12位英文数字">
-        <br/>
-        <label>请重复输入密码</label>
-        <input type="password" name="passSure" placeholder="密码为6-12位英文数字">
-        <br/>
-        <label>类型</label>
-        <input type="radio" value="1"  name="feedBack" />纠错
-        <br/>
-        <label></label>
-        <input type="radio" value="2"  name="feedBack" />建议
-        <br/>
-        <label>提意见的文章</label>
-        <select name="articleSeleted">
-            <option value="1" selected = "selected">第一篇</option>
-            <option value="2">第二篇</option>
-            <option value="3">第三篇</option>
-            <option value="4">第四篇</option>
-        </select>
-        <br/>
-        <label>性别</label>
-        <input type="radio" value="man" name="sex">男
-        <input type="radio" value="woman" name="sex">女
-        <br/>
-        <label>输入您的建议</label>
-        <textarea rows="10" cols="30"></textarea>
-        <br/>
-        <input type="submit" value="发送" name="submit">
-        <br/>
-        <input type="reset" value="重置" name="reset">
-        <br/>
-        <div class="clear"></div>
-    </form>
-    <br/>
-</article>
-<footer>版权所有&copy;</footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">
+                    <a href="http://ife.baidu.com/task/all">第二阶段任务</a>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="Task_13.html">任务十三：零基础JavaScript编码（一）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_14.html">任务十四：零基础JavaScript编码（二）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_15.html">任务十五：零基础JavaScript编码（三）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_16.html">任务十六：零基础JavaScript编码（四）</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="Task_17.html">任务十七：零基础JavaScript编码（五）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_18.html">任务十八：基础JavaScript练习（一）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_19.html">任务十九：基础JavaScript练习（二）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_20.html">任务二十：基础JavaScript练习（三）</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="Task_21.html">任务二十一：基础JavaScript练习（四）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_22.html">任务二十二：JavaScript和树（一）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_23.html">任务二十三：JavaScript和树（二）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_24.html">任务二十四：JavaScript和树（三）</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="Task_24.html">任务二十五：JavaScript和树（四）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_26.html">任务二十六：行星与飞船（一）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_27.html">任务二十七：行星与飞船（二）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_28.html">任务二十八：行星与飞船（三）</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="Task_29.html">任务二十九：表单（一）单个表单项的检验</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_30.html">任务三十：表单（二）多个表单项的动态校验</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_31.html">任务三十一：表单（三）联动</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_32.html">任务三十二：表单（四）实现表单自动生成工厂</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="Task_33.html">任务三十三：听指令的小方块（一）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_34.html">任务三十四：听指令的小方块（二）</a>
+            </div>
+            <div class="col-md-3">
+                <a href="Task_35.html">任务三十五：听指令的小方块（三）</a>
+            </div>
+        </div>
+    </div>
+</section>
+<script scr="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
+</html>

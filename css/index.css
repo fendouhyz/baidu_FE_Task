@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei, sans-serif;
+    text-decoration: none;
+}
+section{
+    background: #cccccc;
+}
+.col-md-12 a{
+    text-decoration: none;
+    color: black;
+}
+.col-md-3{
+    height: 75px;
+    text-align: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    line-height: 35px;
+}
+.col-md-3 a {
+    color: black;
+    width: 300px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration:none;
+    list-style-type: none;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.col-md-3:hover {
+    border: solid 1px #0088ff;
+/*    background-color: #29bcff;*/
+}
+.col-md-3 a:hover{
+    color: #0088ff;
+}
+header#top {
+    height: 100px;
+    background: rgba(0, 0, 0, 1);
+}
+header#top h1 {
+    height: 100px;
+    line-height: 100px;
+    padding-left: 50px;
+    color: white;
+}
+#teamName {
+    font-size: 18px;
+    margin-left: 20px;
+}
+/*header.task {
+    height: 80px;
+}
+header.task h2 {
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}*/
