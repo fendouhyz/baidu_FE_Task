@@ -1,0 +1,29 @@
+body{
+	position: relative;
+}
+#ovalleft{
+	position: absolute;
+	border-bottom-right-radius: 50px;
+	background: #fc0;
+	width: 50px;
+	height: 50px;
+}
+#ovalright{
+	position: absolute;
+	border-top-left-radius: 50px;
+	background: #fc0;
+	width: 50px;
+	height: 50px;
+	top:150px;
+	left: 350px
+}
+#retangle{
+	width:400px;
+	height: 200px;
+	background: #ccc;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+
+}

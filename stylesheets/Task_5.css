@@ -1,0 +1,181 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+.clear{
+    clear: both;
+}
+body{
+    background: #C0C0C0;
+    font-family: "Microsoft YaHei";
+}
+nav{
+    background: #3c3c3c;
+    width: 100%;
+    height: 75px;
+    position: relative;
+}
+#baiduLogo{
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    height: 75px;
+}
+nav ul {
+    height: 75px;
+}
+nav ul li{
+    float: right;
+    text-align: center;
+    line-height: 75px;
+    height: 75px;
+    margin-right:25px;
+    color: black;
+}
+#navIcon{
+    width: 75px;
+    height: 75px;
+    display: none;
+    margin-right:0px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+article{
+    width: 90%;
+    background: white;
+    border: solid 1px gray;
+    margin: 25px auto;
+    padding: 30px 20px 30px 20px;
+    box-shadow: 4px 4px 4px gray;
+}
+article h2{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+article h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.writer,.time{
+    font-size: 15px;
+    margin-right: 10px;
+}
+article p.content{
+    text-indent: 2em;
+}
+article ul{
+    overflow: auto;
+}
+article ul li{
+    list-style: none;
+    margin: 15px 15px 15px 15px ;
+    float:left;
+}
+
+aside h3 .line{
+    width: 0px;
+    height: 100%;
+    border: solid 1px gray;
+    margin-right: 10px;
+}
+aside form label{
+    float: left;
+    width: 110px;
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 0.8em;
+}
+aside input,select{
+    width: 180px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    text-align: left;
+}
+aside input[type="radio"]{
+    width:30px;
+}
+aside form textarea {
+    width: 50%;
+    height: 180px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    text-align: left;
+}
+aside input[type="submit"],[type="reset"]{
+    display: block;
+    width:90%;
+    margin: 0 auto;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background: #F0E68C;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+}
+article br{
+    clear: left;
+}
+
+footer{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 4em
+}
+/*´¦ÀíÍøÒ³¿í¶ÈÌ«Ð¡£¬µ¼º½À¸ÊÕËõ*/
+@media screen and (max-width:990px) {
+    #navIcon{
+        display: inline-block;
+        height: 75px;
+        z-index: 1;
+    }
+    #forResize{
+        z-index: 2;
+    }
+    nav ul{
+        width: 75px;
+        height: 75px;
+        float: right;
+        margin-right: 25px;
+        display: inline-block;
+    }
+    nav ul li:nth-child(n+2){
+        clear: right;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        list-style: none;
+        background: #3c3c3c;
+        border: solid 1px gray;
+        font-size: 10px;
+        margin-right: 0px;
+    }
+    nav ul li:nth-child(n+2) {
+        display: none;
+    }
+    #forResize:hover ul li:nth-child(n+2) {
+        display: block;
+    }
+}
+
+aside{
+    float: right;
+    width:350px;
+    margin-right:20px; 
+    margin-top:25px;
+    background: white;
+    padding: 30px 15px 20px 20px;
+    box-shadow: 4px 4px 4px gray;
+    border: solid 1px gray;
+
+}
+section{
+    margin-right: 420px;
+/*    background: blue;*/
+    padding:0px 20px;
+   /* overflow: auto;*/
+}
